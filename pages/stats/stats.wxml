@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="stats-header">
+    <text>骰子统计数据</text>
+  </view>
+
+  <view class="total-info">
+    <text>总投掷次数：{{totalRolls}}</text>
+  </view>
+
+  <view class="stats-grid">
+    <view class="grid-item" wx:for="{{[1,2,3,4,5,6]}}" wx:key="*this">
+      <view class="dice-number">点数 {{item}}</view>
+      <view class="dice-count">{{currentDistribution[item].count}} 次</view>
+      <view class="dice-percentage">{{currentDistribution[item].percentage}}</view>
+    </view>
+  </view>
+</view> 

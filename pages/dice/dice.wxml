@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="dice {{rolling ? 'rolling' : ''}}">
+    <view class="dice-face">{{diceNumber}}</view>
+  </view>
+  
+  <view class="roll-button" bindtap="rollDice">
+    <text>摇一摇</text>
+  </view>
+  
+  <view class="total-rolls">
+    <text>总投掷次数：{{totalRolls}}</text>
+  </view>
+</view> 

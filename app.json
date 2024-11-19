@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/dice/dice",
+    "pages/stats/stats"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大家一起摇色子",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/dice/dice",
+        "text": "摇色子",
+        "iconPath": "/images/dice.png",
+        "selectedIconPath": "/images/dice-active.png"
+      },
+      {
+        "pagePath": "pages/stats/stats",
+        "text": "统计",
+        "iconPath": "/images/stats.png",
+        "selectedIconPath": "/images/stats-active.png"
+      }
+    ]
+  }
+} 

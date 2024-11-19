@@ -1,0 +1,85 @@
+/* /Users/jerry/test_ai/yaoshaizi/pages/stats/stats.ttss */
+
+.container {
+  padding: 30rpx;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-header {
+  font-size: 36rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.total-info {
+  text-align: center;
+  margin-bottom: 40rpx;
+  color: #666;
+  font-size: 32rpx;
+}
+
+.chart-container {
+  flex: 1;
+  padding: 40rpx 20rpx;
+  background: #f8f8f8;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+
+.chart {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-bottom: 40rpx;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80rpx;
+}
+
+.bar {
+  width: 60rpx;
+  background: #1aad19;
+  border-radius: 10rpx 10rpx 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: height 0.3s ease;
+  position: relative;
+}
+
+.bar-percentage {
+  color: #fff;
+  font-size: 24rpx;
+  padding: 8rpx 0;
+  transform: translateY(-30rpx);
+}
+
+.bar-count {
+  color: #fff;
+  font-size: 20rpx;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 5rpx;
+}
+
+.bar-label {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.line-chart-container {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #ffffff;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}

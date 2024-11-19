@@ -1,0 +1,16 @@
+<!-- /Users/jerry/test_ai/yaoshaizi/pages/dice/dice.ttml -->
+<view class="container">
+  <view class="dice-container">
+    <view class="dice {{rolling ? 'rolling' : ''}}">
+      <text class="dice-number">{{diceNumber}}</text>
+    </view>
+  </view>
+  
+  <view class="roll-button" bindtap="rollDice">
+    <text>摇一摇</text>
+  </view>
+  
+  <view class="total-rolls">
+    <text>总投掷次数：{{totalRolls}}</text>
+  </view>
+</view>

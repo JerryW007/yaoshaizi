@@ -1,0 +1,51 @@
+.container {
+  padding: 30rpx;
+}
+
+.stats-header {
+  font-size: 36rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.total-info {
+  text-align: center;
+  margin-bottom: 40rpx;
+  color: #666;
+  font-size: 32rpx;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  padding: 20rpx;
+}
+
+.grid-item {
+  background: #f8f8f8;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  box-shadow: 0 2rpx 4rpx rgba(0,0,0,0.1);
+}
+
+.dice-number {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.dice-count {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 8rpx;
+}
+
+.dice-percentage {
+  font-size: 36rpx;
+  color: #1aad19;
+  font-weight: bold;
+} 

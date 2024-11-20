@@ -67,13 +67,18 @@ Page({
       ctx.setLineWidth(2);
       ctx.beginPath();
       var countNumber = this.data.probabilities[i].length
-      this.data.probabilities[i].forEach((probability, index) => {
+      const currentPoints =  this.data.probabilities[i]
+      currentPoints.forEach((probability, index) => {
         const x = padding + index * (chartWidth  / countNumber);
         const y = chartHeight - padding - ((probability.replace('%', '')/100) * (chartHeight - padding * 2));
         if (index === 0) {
           ctx.moveTo(x, y);
         } else {
-          ctx.lineTo(x, y);
+          // 使用贝塞尔曲线连接点
+          // const prevX = padding + (index - 1) * (chartWidth  / countNumber);
+          // const prevY = chartHeight - padding - (currentPoints[index - 1] * (chartHeight - padding * 2));
+          // ctx.bezierCurveTo(prevX, prevY, x, y, x, y); // 绘制曲线
+          ctx.lineTo(x, y)
         }
       });
       ctx.stroke();

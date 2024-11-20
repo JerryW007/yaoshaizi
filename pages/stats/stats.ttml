@@ -11,7 +11,7 @@
   <view class="chart-container">
     <view class="chart">
       <view class="bar-container" tt:for="{{[1,2,3,4,5,6]}}" tt:key="*this">
-        <view class="bar" style="height: {{currentDistribution[item].height}}">
+        <view class="bar" style="height: {{currentDistribution[item].count*10}}px">
           <text class="bar-percentage">{{currentDistribution[item].percentage}}</text>
           <text class="bar-count">{{currentDistribution[item].count}}</text>
         </view>

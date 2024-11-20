@@ -18,7 +18,6 @@ Page({
 
       const currentDistribution = {};
       const probabilities = tt.getStorageSync('diceProbabilities') || []; // 从存储中读取概率数据
-      console.log('读取的概率数据:', probabilities); // 调试信息
 
       // 确保 probabilities 是一个有效的数组
       if (!Array.isArray(probabilities)) {
@@ -51,7 +50,6 @@ Page({
   },
 
   drawLineChart() {
-    console.log("绘制折线图:" + this.data.probabilities)
     const ctx = tt.createCanvasContext('lineChart', this);
     const chartWidth = 300; // 图表宽度
     const chartHeight = 200; // 图表高度

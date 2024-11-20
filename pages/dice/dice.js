@@ -18,7 +18,6 @@ Page({
     if (this.data.rolling) return;
     
     this.setData({ rolling: true });
-    console.log('开始摇动');
     
     let count = 0;
     const maxCount = 10;
@@ -35,7 +34,6 @@ Page({
           diceNumber: finalNumber,
           rolling: false,
         });
-        console.log('摇动结束，最终点数:', finalNumber);
         this.saveResult(finalNumber);
       }
     };
@@ -69,7 +67,6 @@ Page({
     
     // 确保 probabilities 是一个有效的数组
     if (!Array.isArray(probabilities)) {
-        console.error('概率数据不是数组，初始化为空数组');
         probabilities.length = 0; // 初始化为空数组
     }
     
